@@ -29,7 +29,7 @@
             //Notificacion que se envian desde tarea JavaScript en segundo plano
             worker.onmessage = (datos)=>{
                 console.log(datos.data);
-               // titulo.innerHTML(datos.data);
+                titulo.innerText = datos.data;
 
                 //paramos el worker
                 if (datos.data <= 0){
