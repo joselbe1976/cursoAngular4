@@ -7,7 +7,7 @@ Curso de Angular 4 de Keepcoding
     <li>Elementos semánticos</li>
     <li>Elementos de formulario</li>
     <li>Audio y Video</li>
-    <li></li>
+    <li>Geolocalización</li>
     <li></li>
     <li></li>
 
