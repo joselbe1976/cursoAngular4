@@ -2,6 +2,8 @@
 <h2>
 Curso de Angular 4 de Keepcoding
 <h2>
+Repo del profesor: https://github.com/vermicida/kc-angular-mobile5
+
 <hr>
 <h1>HTML 5</h1>
 <lu>
