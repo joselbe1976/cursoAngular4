@@ -12,5 +12,28 @@
 
 </p>
 
+<script>
+        //verificamos que esta WebStorage disponible
+        if(typeof(Storage) !== "undefined"){
+
+            //Escribimos valor en almacen local
+            localStorage.setItem("valorEnLocal","Buenas noches Keepcoders");
+            let  mValue = localStorage.getItem("valorEnLocal");
+            
+       
+            //Almacen de Sesión
+            sessionStorage.setItem("valorEnSesion","Hola es de sesión");
+            let mValueSession = sessionStorage.getItem("valorEnSesion");
+            alert(mValueSession);
+
+        }
+        else
+        {
+            console.log('Web Storage NO disponible. No lo soporta');
+        }
+
+
+</script>
+
 </body>
 </html>
