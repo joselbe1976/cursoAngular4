@@ -5,6 +5,26 @@
     <title>Geolocalización</title>
 </head>
 <body>
-    
+    <script>
+        //control de la API de Geolocalizacion
+
+        if(navigator.geolocation){
+
+            //obtebemos la posicion
+            navigator.geolocation.getCurrentPosition(
+                (data)=>{
+                    console.log(data);
+                }
+                , 
+                (error)=>{
+                    console.log(error);
+                }
+            );
+        }
+        else
+        {
+            console.log('Geolocalizacion NO disposible');
+        }
+    </script>
 </body>
 </html>
