@@ -2,3 +2,8 @@
 <h2>
 Curso de Angular 4 de Keepcoding
 <h2>
+<hr>
+<lu>
+    <li>Elementos semánticos</li>
+</lu>
+
