@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Workers</title>
+</head>
+<body>
+<p>
+    Ejecuta Codigo JS en segundo plano (no es segundo Hilo), pero no afecta al rendimiento de la pagina ( es un sistema de eventos). Para tareas que hagan de uso intenso de CPU. Ejemplo de paginas como KAYAK, TRIVAGO etc. que segun buscan, te va dando poco a poco los resultados.
+
+    Nota: Arrancamos en MAC un servidor basico HHTPP asi desde terminal y posicionado en la carpeta donde este el fuente html:
+    <br><hr>
+    python -m python -m SimpleHTTPServer
+    <hr>
+
+
+
+</p>
+<br><br>
+<h1 id="supernumero"></h1>
+<script>
+        //objetnemos referencia al elemento H1
+        let titulo = document.getElementById("supernumero"); 
+
+        //Verificamos si Worker esta disponible
+        if (typeof(Worker) !== "undefined"){
+            const worker = new Worker("07b-web-worker.js");
+
+            //Notificacion que se envian desde tarea JavaScript en segundo plano
+            worker.onmessage = (datos)=>{
+                console.log(datos.data);
+               // titulo.innerHTML(datos.data);
+
+                //paramos el worker
+                if (datos.data <= 0){
+                    worker.terminate(); //finaliza
+                }
+            };
+        }
+        else
+        {
+            console.log("Web Workers no soportado");
+        }
+</script>
+</body>
+</html>
