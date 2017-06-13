@@ -22,5 +22,6 @@ Repo del profesor: https://github.com/vermicida/kc-angular-mobile5
      <li>Degradados</li>
      <li>Sombras</li>
      <li>TipoGrafias</li>
+     <li>Animaciones</li>
 </lu>
 
