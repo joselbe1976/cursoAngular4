@@ -23,5 +23,7 @@ Repo del profesor: https://github.com/vermicida/kc-angular-mobile5
      <li>Sombras</li>
      <li>TipoGrafias</li>
      <li>Animaciones</li>
+     <li>Responsive Desing (Diseño adaptativo)</li>
+     <li>SASS</li>
 </lu>
 

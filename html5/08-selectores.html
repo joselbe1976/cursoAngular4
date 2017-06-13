@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores (CSS3)</title>
+    <style>
+        /* Seleccion por valor de un atributo*/
+        a[href$="vistas"]{
+            color: green;
+        }
+        p::first-line{
+            color: pink;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 32px;
+        }
+        p::selection{
+            background-color: deeppink;
+            color: white;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="novedades">Novedades</a>
+        <a href="entrevistas">Entrevistas</a>
+        <a href="enlaces">Enlaces</a>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi rem rerum placeat reiciendis adipisci tempora recusandae sit amet impedit exercitationem nulla, eos magni earum, fugiat totam ullam neque error delectus.</p>
+</body>
+</html>

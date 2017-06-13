@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS 3</title>
+
+    <style>
+          @keyframes animacion1{
+            0%{
+                background-color: deeppink;
+            }
+            50%{
+                transform: scale(2);
+                transform: rotate(45deg);
+                background-color: greenyellow;
+            }
+            100%{
+                transform: scale(1);
+                background-color:cadetblue;
+            }
+          }
+
+          div{
+              width: 200px;
+              height: 200px;
+              animation: animacion1 10s;
+          }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
