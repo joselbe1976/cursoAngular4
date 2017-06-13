@@ -21,5 +21,6 @@ Repo del profesor: https://github.com/vermicida/kc-angular-mobile5
      <li>Selectores</li>
      <li>Degradados</li>
      <li>Sombras</li>
+     <li>TipoGrafias</li>
 </lu>
 
